@@ -1,0 +1,85 @@
+.top-wrapper{
+    background-image: url('images/top.jpg');
+    background-size: cover;
+    height: 600px;    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-radius: 12px;
+    padding: 15px;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 5px;
+    height: 100px;
+}
+.top-wrapper input {
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    width: 300px;
+    font-size: 20px;
+}
+.top-wrapper select {
+    padding: 10px;
+    border-radius: 12px;
+    border: none;
+    width: 300px;
+    font-size: 20px;
+}
+.card-wrapper{
+    display: flex;
+   justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+/* HTML: <div class="loader"></div> */
+.loader {
+    width: 60px;
+    margin: 0 auto;
+
+    margin-top: 50px;
+    height: 50px;
+    --m:no-repeat linear-gradient(90deg,#000 70%,#0000 0);
+    -webkit-mask: 
+      var(--m) calc(0*100%/4) 100%/calc(100%/5) calc(1*100%/5),
+      var(--m) calc(1*100%/4) 100%/calc(100%/5) calc(2*100%/5),
+      var(--m) calc(2*100%/4) 100%/calc(100%/5) calc(3*100%/5),
+      var(--m) calc(3*100%/4) 100%/calc(100%/5) calc(4*100%/5),
+      var(--m) calc(4*100%/4) 100%/calc(100%/5) calc(5*100%/5);
+    background: linear-gradient(#514b82 0 0) left/0% 100% no-repeat #ddd;
+    animation: l14 2s infinite steps(6);
+  }
+  @keyframes l14 {
+    100% {background-size: 120% 100%}
+  }
+  .card{
+    background-color: wheat;
+    border-radius: 12px;
+    padding: 15px;
+    margin: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  .card img {
+    width: 131px;
+    border-radius: 12px;
+  }
+.body {
+    background-color: burlywood;
+}
+@media screen and (max-width: 321px) {
+    .card-wrapper {
+        display: block;
+        justify-content: center;
+    }
+    .card {
+        width: 90%;
+    }
+    .top-wrapper {
+        display: inline-block;
+        width: 300px;
+        
+    }
+}
