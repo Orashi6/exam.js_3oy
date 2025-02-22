@@ -4,7 +4,7 @@ const users = async () => {
     if (loader) loader.style.display = 'block'; // Loader ko'rinadigan qilib qo'yish
 
     // 5 soniya kutish
-    await new Promise(resolve => setTimeout(resolve, 3000));
+    await new Promise(resolve => setTimeout(resolve, 2200));
 
     try {
         const response = await fetch('https://fakestoreapi.com/products');

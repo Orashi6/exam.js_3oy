@@ -1,5 +1,4 @@
 .top-wrapper{
-    background-image: url('images/top.jpg');
     background-size: cover;
     height: 600px;    text-align: center;
     display: flex;
@@ -13,6 +12,12 @@
     font-weight: bold;
     letter-spacing: 5px;
     height: 100px;
+    border: 12px solid black;
+    box-shadow: 0px 0px 10px azure;
+}
+.top-wrapper img {
+    width: 120px;
+    border-radius: 12px;
 }
 .top-wrapper input {
     padding: 10px;
@@ -61,6 +66,10 @@
     margin: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 400px;
+  }
+  .card:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
   }
   .card img {
     width: 131px;
